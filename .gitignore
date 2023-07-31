@@ -9,3 +9,4 @@ src/results.xml
 src/user_config.tcl
 src/semaphore.v.out
 src/MPU.v.out
+src/ALU.v.out

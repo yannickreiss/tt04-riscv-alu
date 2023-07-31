@@ -28,45 +28,47 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      
+      It takes the opcode and both input values in 9 cycles and outputs the result in 4 more cycles.
+      The internal logic is working on 32 bit like a normal 32 bit risc-v alu.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      
+      Connect chip to in- and outputs.
+      Give the needed inputs using the input pins and collect the output using the output pins.
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:       
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - alu_in
+    - alu_in
+    - alu_in
+    - alu_in
+    - alu_in
+    - alu_in
+    - alu_in
+    - alu_in
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - alu_out
+    - alu_out
+    - alu_out
+    - alu_out
+    - alu_out
+    - alu_out
+    - alu_out
+    - alu_out
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - none
+    - none
+    - none
+    - none
+    - none
+    - none
+    - none
+    - none
 
 # The following fields are optional
-  tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
+  tag:          "alu, risc, riscv"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
   discord:      "schnick_"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
